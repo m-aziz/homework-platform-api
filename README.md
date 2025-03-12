@@ -55,7 +55,7 @@ Now, the users can authenticate via API using their token (can be created via ui
 For ease of use to test each of the endpoints, I have created and included a postman collection that I was using during development:
 
 ```
-https://api.postman.com/collections/31854357-11da8de4-6f6b-45a5-a77d-c26c0983a9f2?access_key=PMAT-01JP4WHMFCEXACWRQDKH7MFMF6
+https://www.postman.com/avionics-meteorologist-21222441/homework-platform-api/collection/ur9wkfd/homework-platform?action=share&creator=31854357
 ```
 
 ## **1️⃣ Students**
