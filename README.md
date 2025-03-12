@@ -9,7 +9,7 @@ It includes authentication, role-based access control, and filters for viewing s
 
 ## 🚀 Setup Instructions
 
-### **1 Install Dependencies**
+### **1️⃣ Install Dependencies**
 
 Ensure you have Python and Django installed.  
 Run the following command to install dependencies:
@@ -25,7 +25,7 @@ python manage.py makemigrations api
 python manage.py migrate
 ```
 
-### **2 Set Up**
+### **2️⃣ Set Up**
 
 A superuser is needed to create students and teachers through the Django Admin Panel.
 
@@ -51,7 +51,7 @@ Now, the users can authenticate via API using their token (can be create via ui)
 
 ## 📌 API Endpoints
 
-## **1 Students**
+## **1️⃣ Students**
 
 Headers
 Authorization: Token {{student_token}}
@@ -93,7 +93,7 @@ Filters:
 ?final_grade=A → Filter by grade
 ?search=Math → Filter by assignment name
 
-## **2 Teachers**
+## **2️⃣ Teachers**
 
 Headers-
 Authorization: Token {{teacher_token}}
