@@ -47,20 +47,21 @@ Log in using the superuser credentials.
 We can use the Admin UI to create Teachers and Students.
 In order to do this, create two Users (with Username, Password, Name)
 Then, Create a Teacher and Student and link it to the User.
-Now, the users can authenticate via API using their token (can be create via ui)
+Now, the users can authenticate via API using their token (can be created via ui)
 
 ## 📌 API Endpoints
 
 ## **1️⃣ Students**
 
-Headers
-Authorization: Token {{student_token}}
-Content-Type: application/json
+### Headers
+
+`Authorization: Token {{student_token}}`
+`Content-Type: application/json`
 
 ### Submit Homework
 
-Method: POST
-URL: /api/submissions/create/
+Method: `POST`
+URL: `/api/submissions/create/`
 
 Body (JSON):
 
@@ -87,27 +88,28 @@ Response (JSON):
 
 ### View Own Submissions
 
-Method: GET
-URL: /api/submissions/
+Method: `GET`
+URL: `/api/submissions/`
 Filters:
 ?final_grade=A → Filter by grade
 ?search=Math → Filter by assignment name
 
 ## **2️⃣ Teachers**
 
-Headers-
-Authorization: Token {{teacher_token}}
-Content-Type: application/json
+Headers
+`Authorization: Token {{teacher_token}}`
+`Content-Type: application/json`
 
 ### View All Assignments
 
-Method: GET
-URL: /api/assignments/
+Method: `GET`
+URL: `/api/assignments/`
 
 ### Create a New Assignment
 
-Method: POST
-URL: /api/assignments/
+Method: `POST`
+URL: `/api/assignments/`
+
 Body (JSON):
 
 ```json
@@ -131,16 +133,16 @@ Response (JSON):
 
 ### View All Student Submissions
 
-Method: GET
-URL: /api/submissions/
+Method: `GET`
+URL: `/api/submissions/`
 Filters:
 ?student_name=john
 ?start_date=2024-03-01&end_date=2024-03-10
 
 ### Grade a Submission
 
-Method: PATCH
-URL: /api/submissions/{{submission_id}}/update/
+Method: `PATCH`
+URL: `/api/submissions/{{submission_id}}/update/`
 
 Body (JSON):
 
