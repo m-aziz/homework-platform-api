@@ -44,9 +44,9 @@ python manage.py runserver
 The API will be available at: http://127.0.0.1:8000/
 
 Log in using the superuser credentials.
-Create a Teacher and Student:
-Create a User (Username & Password)
-Create a Teacher or Student and link it to the User
+We can use the Admin UI to create Teachers and Students.
+In order to do this, create two Users (with Username, Password, Name)
+Then, Create a Teacher and Student and link it to the User.
 Now, the users can authenticate via API using their token (can be create via ui)
 
 ## 📌 API Endpoints
